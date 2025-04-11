@@ -1,0 +1,9 @@
+# Ignore all .sh files
+*.sh
+
+# Ignore all .yaml files
+*.yaml
+
+# Ignore any directory named 'wandb' at any level
+wandb/
+**/wandb/
