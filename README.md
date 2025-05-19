@@ -1,1 +1,14 @@
-# Noise Preserving Autoencoders
+# Efficient Likelihood Calculations
+The work in this repo documents the creation, implementation and efficient calculations using the Point-Spread function of the VLA-FIRST detector.
+
+The repo contains the jupyter notebook (and PDF from it) that created the [matrix](Factoring the Covariance Matrix.pdf). This notebook covers the statistical assumptions and the numerical algorithm used to create the covariance, before scaling with $\sigma_\mathrm{rms}$, discussing the basic block diagonal formulation.
+
+The second notebook covers methods that can be used to factor the covariance matrix, including a general discussion of the cholesky [decomposition](Create the Covariance Matrix.pdf).
+
+`main_autoencoder_optioni` are very similar python scripts, just with options for different likelihood efficiency methods toggled on or off. This is done so that they can run all at the same time without interference.
+
+The results are found in:
+https://wandb.ai/deya-03-the-university-of-manchester/Efficient_Likelihood/reports/Efficient-Likelihood-for-VLA-FIRST-Statistical-AE--VmlldzoxMjg0MTYzMA
+
+The work was done in collaboration with Ahmad Abdelhakam Mahmoud, who posts his code on using this covariance matrix to preserve statistical distributions here:
+https://github.com/Eazo1/Neural_Compression_Masters

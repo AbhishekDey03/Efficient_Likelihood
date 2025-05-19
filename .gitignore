@@ -7,3 +7,5 @@
 # Ignore any directory named 'wandb' at any level
 wandb/
 **/wandb/
+
+MiraBest_N.py
